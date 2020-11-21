@@ -1,22 +1,15 @@
-# INSTAGRAM
 
+#### Instagram-Clone
 
+![alt text](app.png)
 
-* Hassan Juma
+#### Get Live link here : [USAGE](https://jumasinstagram.herokuapp.com/)
 
 ## Description.
-* App that resembles instagram that allows users to signup and thus login to the application,users can also follow each other like each others photos ,comment and update their profiles.
-* Here is the [link](https://jumasinstagram.herokuapp.com/) to my website.
+Django CRUD Web application that allows users to signup and login to the web application, they can also follow each other like each other's photos, comment, and update their profiles. It also saves users' posts via various posts and can always be viewed from time to time.
 
-## How to access this
 
-You can access it by cloning the [Repository](https://github.com/HASSAN1A/Instagram.git)
-```
-$ Open Terminal (Ctrl Alt T)
-$ git clone link 
-$ cd directory-name(Password)
-$ code .
-```
+
 
 ## Running the process
 * . virtual/bin/activate
@@ -28,17 +21,7 @@ $ code .
 * Django: python framework.
 * HTML.
 * BOOTSTRAP.
-#### Instagram-Clone
-
-![alt text](app.png)
-
-#### Get Live link here : [USAGE](https://jushgallary.herokuapp.com/)
-
-
-# Description
-This  is a Django Web application that allows Users to view different kinds of photos that interests me. A user is able to click on a photo to expand it and will able to see the details of the photo. A search bar also enables a user to search categories avalable for viewing based on the location taken.
 ## User Story
-
 * A user can view photos that interest me.
 * Click on a single photo to expand it and also view the details of the photo.
 * Search for different categories of photos. (ie. Nature, Food).
@@ -50,11 +33,11 @@ To get the code..
 
 1. Cloning the repository:
   ```bash
-  https://github.com/HASSAN1A/Gallary.git
+  https://github.com/HASSAN1A/Instagram-Clone.git
   ```
 2. Move to the folder and install requirements
   ```bash
-  cd Gallary
+  cd Instagram-Clone
   pip install -r requirements.txt
   ```
 3. Set up your database
@@ -76,14 +59,14 @@ Open the application on your browser `127.0.0.1:8000`.
 
 | Behaviour                                                                                        |                                                                      Input                                                                       |                                                                                                 Output |
 | ------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------: | -----------------------------------------------------------------------------------------------------: |
-| Page loads, user arrives in the landing page, a list of all available house category is displayed. | The user can click on any particular list group item to be directed to a separate page containing house highlights houses by the same user. | On clicking the "post a house" button, the user is redirected to the main login and signup to allow you create an house for sale. |  |
+| Page loads, user arrives in the landing page, a list of all available users category is displayed. | The user can click on any particular user or friend suggestions to be directed to a separate page containing user highlights and follow button by the same user. | On clicking the "button" , the user is redirected to friendlist to allow you follow  more users. |  |
 
 ## Features
 
 Here are the summary:
 
-- A landing page showing house categories.
-- Clickable houses which direct the user to a page with article highlights from the particular house.
+- A landing page showing users and their prifile pictures.
+- Clickable users which direct the user to a page with their highlights from the particular post.
 
 
 ## Requirements
@@ -109,7 +92,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Built with
 
-1. [Python 3.8.2](https://www.python.org/doc/) : Programming language.
+1. [Python 3.8.5](https://www.python.org/doc/) : Programming language.
 2. [Django; Python framework used.](https://flask.palletsprojects.com/en/1.1.x/):Framework used.
 3. [HTML](https://www.w3schools.com/html/) : Layout.
 4. [CSS](https://www.w3schools.com/css/) : Styling.
