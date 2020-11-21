@@ -39,23 +39,23 @@
                   <div class="form-group">
                     <input type="text" name="username" class="">
                     <span><input type="submit" value="Search" class="btn-sm"></span>
-                          
+
                   </div>
                 </form>
               </div>
-              
-              <!-- search form end -->  
+
+              <!-- search form end -->
               <!-- Navbar Right Side -->
               <div class="navbar-nav">
                 {% if user.is_authenticated %}
                 <a class="nav-item nav-link" style="color: black;" href="{% url 'photo-home' %}">  <i class="fa fa-home fa-2x"aria-hidden="true"></i></a>
-                
+
                 <a class="nav-item nav-link" href="{% url 'post-create' %}"><i class="fa fa-paper-plane-o fa-1x mt-2 mr-1" aria-hidden="true" style="font-size:30px;color:black;"></i></a>
-                
+
                 <a class="navbar-brand mr-4" href="{% url 'photo-home' %}" style=""><img src="/static/favicon/ic.png" type="img/jpg"width="" height=""></a>
-                
-                
-                <i class="fa fa-paper-plane-o fa-1x mt-2 mr-1 j" aria-hidden="true" style="font-size:30px;color:black;"></i>  <i class="fa fa-heart-o fa-1x mt-2" aria-hidden="true" style="font-size:30px;color:black;"></i>
+
+                <!-- <i class="fa fa-paper-plane-o fa-1x mt-2 mr-1 j" aria-hidden="true" style="font-size:30px;color:black;"></i> -->
+                <i class="fa fa-heart-o fa-1x mt-2" aria-hidden="true" style="font-size:30px;color:black;"></i>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img class="rounded-circle" width="30" height="30" src="{{ user.profile.image.url }}">
