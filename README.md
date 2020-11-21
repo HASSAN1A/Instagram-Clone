@@ -1,7 +1,16 @@
 
 #### Instagram-Clone
 
+#### Site
+#### Landing Page
+Currently deployed at heroku and working.
+
 ![alt text](app.png)
+
+#### Mobile support
+The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
+
+
 
 #### Get Live link here : [USAGE](https://jumasinstagram.herokuapp.com/)
 
