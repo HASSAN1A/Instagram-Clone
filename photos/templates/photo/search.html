@@ -1,0 +1,29 @@
+{%extends 'photo/base.html'%} 
+{% block content %}
+<div class="container" style="text-align: center;">
+
+  <div class="row">
+    {% if usernames%}
+    <h2>Found {{ results|length }} user{{ results|pluralize }}</h2>
+    {% else %}
+      <h2> Found 0 user {{message}}</h2>
+    {% endif %}
+
+  </div>
+
+  <div class="row">
+
+  {% if usernames %}
+    {% for username in usernames %}
+      <div class="col-sm-6 col-md-3">
+          <h1>{{username.title}}</h1>
+          <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</div>
+<a class="d-block mx-auto" href="/">
+  <button class="btn btn-sm btn-info d-block mx-auto">Back Home</button>
+</a>
+{% endblock %}
