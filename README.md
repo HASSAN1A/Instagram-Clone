@@ -16,11 +16,6 @@ Django CRUD Web application that allows users to signup and login to the web app
 * To open local server run python3 manage.py runserver
 * To run the test,run python manage.py test instagram
 
-## Technology used
-* Python language.
-* Django: python framework.
-* HTML.
-* BOOTSTRAP.
 ## User Story
 * A user can view photos that interest me.
 * Click on a single photo to expand it and also view the details of the photo.
