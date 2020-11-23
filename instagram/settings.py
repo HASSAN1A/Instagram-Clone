@@ -14,6 +14,9 @@ from pathlib import Path
 import os
 import django_heroku
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 from decouple import config,Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -69,6 +72,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photos',
     'users',
+    'cloudinary',
     'crispy_forms',
     'bootstrap3',
 ]
@@ -160,3 +164,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'photo-home'
 LOGIN_URL = 'login'
 django_heroku.settings(locals())
+
+cloudinary.config( 
+  cloud_name = "dy8uvacco", 
+  api_key = "559452647943885", 
+  api_secret = "WugdaysfbdNZ0AxMtCw2verMyTQ" 
+)
