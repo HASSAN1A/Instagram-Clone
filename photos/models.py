@@ -36,8 +36,7 @@ class Username(models.Model):
 
     def update_username(self):
         self.delete()
-        
-    
+
     @classmethod
     def search_by_title(cls,search_term):
         photo = cls.objects.filter(title__icontains=search_term)
