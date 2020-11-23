@@ -2,12 +2,13 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
-
+from cloudinary.models import CloudinaryField
 # Create your models here.
 
 
 class Post(models.Model):
-    image = models.ImageField(upload_to='posts/')
+    image = CloudinaryField('image',null=True,blank=True)
+    # image = models.ImageField(upload_to='posts/')
     title = models.CharField(max_length=100)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
@@ -23,7 +24,8 @@ class Post(models.Model):
 
 class Username(models.Model):
     title = models.CharField(max_length =30)
-    image = models.ImageField(max_length =60,upload_to='images/')
+    image = CloudinaryField('image',null=True,blank=True)
+    # image = models.ImageField(max_length =60,upload_to='images/')
     description = models.TextField(max_length =200)
 
 
